@@ -137,6 +137,11 @@ const controlAddRecipe = async function (newRecipe) {
   }
   //upload the new recipe
 };
+
+const newFeature = function () {
+  console.log('Welcome to the application!');
+};
+
 /**LECTURE 290 - Listening for load and hashchange Events  */
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks);
@@ -146,7 +151,7 @@ const init = function () {
   searchView.addhandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Welcome!');
+  newFeature();
 };
 init();
 /**LECTURE 291 - THE MVC Architecture */
